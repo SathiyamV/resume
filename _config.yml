@@ -94,9 +94,15 @@ content:
         caption: 2021 - 2024
         sub_title: BSc Computer Science
       - layout: top-middle
-        title: Sri Vidhya Matric Higher Secondary School
+        title: Sri Vidya Matric Higher Secondary School,Virudhunagar
         caption: 2020 - 2021
         sub_title: HSC
+        sub_title: 80%
+      - layout: top-middle
+        title: KVS Higher Secondary School,Virudhunagar
+        caption: 2018 - 2019
+        sub_title: SSLC
+        sub_title: 70%
        # quote: >
          # Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
        # description: | # this will include new lines to allow paragraphs
@@ -108,13 +114,13 @@ content:
     layout: text
     content: | # this will include new lines to allow paragraphs
       Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
+      - Readin Books
+      - Watching Movies,Series and Anime
       - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+      - Listening Music and Singing
+      - Playing Keyboard
 
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+     
 
 # Footer
 footer_show_references: true
