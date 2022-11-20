@@ -93,6 +93,10 @@ content:
         title: Sri Krishna Adithiya College of Arts and Science
         caption: 2021 - 2024
         sub_title: BSc Computer Science
+      - layout: top-middle
+        title: Sri Vidhya Matric Higher Secondary School
+        caption: 2020 - 2021
+        sub_title: HSC
        # quote: >
          # Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
        # description: | # this will include new lines to allow paragraphs
