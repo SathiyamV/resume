@@ -75,7 +75,7 @@ content:
   - title: Skills
     layout: text
     content: |
-        MY Technical Skills are:
+      MY Technical Skills are:
       - Programming Languages (Python, Java, C++,C)
       - Backend Frameworks(Fast API, Django)
       - Computer Networks
