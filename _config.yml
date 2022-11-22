@@ -9,7 +9,7 @@ version: 2
 name: Sathiya Sundaram V
 title: Intern Trainee
 email: sathiyamsharmila@gmail.com
-website: www.github.com/SathiyamV/resume
+website: sathiyam-resume.netlify.app
 
 # Dark Mode (true/false/never)
 darkmode: false
@@ -71,7 +71,33 @@ content:
           I learned about backend and API about in this Project .
         description: | # this will include new lines to allow paragraphs
           I started this project as a way if learning <mark>Python</mark> and  learned about how Frontend and Backend works. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
-
+          
+     - title: Skills
+    layout: list
+    content:  # this will include new lines to allow paragraphs
+      - layout: left
+        title: Programming Languages
+        sub_title: Python, Java, C++,C
+      - layout: left
+        title: Backend Framework
+        sub_title: Fast API, Django 
+      - layout: left
+        title: Computer Networks
+      - layout: left
+        title: Frontend Languages
+        sub_title: HTML, CSS, JavaScript
+      - layout: left
+        title: Frontend Framework
+        sub_title: Bootstrap
+      - layout: left
+        title: Frontend Libraries
+        sub_title: React JS
+      - layout: left
+        title: Database
+        sub_title: MYSQL,Sqlite
+      - layout: left
+        title: Version Control
+        sub_title: Git, GitHub
    # - title: Experience # Title for the section
    # layout: list # Type of content section (list/text)
    # content:
