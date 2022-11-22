@@ -73,8 +73,17 @@ content:
           I started this project as a way if learning <mark>Python</mark> and  learned about how Frontend and Backend works. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
           
   - title: Skills
-    layout: list
-    content:  # this will include new lines to allow paragraphs
+    layout: text
+    content: |
+        MY Technical Skills are:
+      - Programming Languages (Python, Java, C++,C)
+      - Backend Frameworks(Fast API, Django)
+      - Computer Networks
+      - Frontend Languages(HTML, CSS, JavaScript)
+      - Frontend Framework(Bootstrap)
+      - Frontend Library(React JS)
+      - Database (MYSQL,Sqlite)
+      - Version Control(Git, GitHub)
       - layout: left
         title: Programming Languages
         sub_title: Python, Java, C++,C
