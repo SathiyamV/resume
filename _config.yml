@@ -77,13 +77,13 @@ content:
     content: |
       MY Technical Skills are:
       - Programming Languages (Python, Java, C++,C)
-      - Backend Frameworks(Fast API, Django)
+      - Backend Frameworks (Fast API, Django)
       - Computer Networks
-      - Frontend Languages(HTML, CSS, JavaScript)
-      - Frontend Framework(Bootstrap)
-      - Frontend Library(React JS)
+      - Frontend Languages (HTML, CSS, JavaScript)
+      - Frontend Framework (Bootstrap)
+      - Frontend Library (React JS)
       - Database (MYSQL,Sqlite)
-      - Version Control(Git, GitHub)
+      - Version Control (Git, GitHub)
  # - title: Skills
    # layout: text
    # content:    
