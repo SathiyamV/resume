@@ -84,29 +84,32 @@ content:
       - Frontend Library(React JS)
       - Database (MYSQL,Sqlite)
       - Version Control(Git, GitHub)
-      - layout: left
-        title: Programming Languages
-        sub_title: Python, Java, C++,C
-      - layout: left
-        title: Backend Frameworks
-        sub_title: Fast API, Django 
-      - layout: left
-        title: Computer Networks
-      - layout: left
-        title: Frontend Languages
-        sub_title: HTML, CSS, JavaScript
-      - layout: left
-        title: Frontend Framework
-        sub_title: Bootstrap
-      - layout: left
-        title: Frontend Library
-        sub_title: React JS
-      - layout: left
-        title: Database
-        sub_title: MYSQL,Sqlite
-      - layout: left
-        title: Version Control
-        sub_title: Git, GitHub
+ # - title: Skills
+   # layout: text
+   # content:    
+     # - layout: left
+       # title: Programming Languages
+       # sub_title: Python, Java, C++,C
+     # - layout: left
+       # title: Backend Frameworks
+       # sub_title: Fast API, Django 
+     # - layout: left
+       # title: Computer Networks
+     # - layout: left
+       # title: Frontend Languages
+       # sub_title: HTML, CSS, JavaScript
+     # - layout: left
+       # title: Frontend Framework
+       # sub_title: Bootstrap
+     # - layout: left
+       # title: Frontend Library
+       # sub_title: React JS
+     # - layout: left
+       # title: Database
+       # sub_title: MYSQL,Sqlite
+     # - layout: left
+       # title: Version Control
+       # sub_title: Git, GitHub
    # - title: Experience # Title for the section
    # layout: list # Type of content section (list/text)
    # content:
