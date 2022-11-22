@@ -76,10 +76,10 @@ content:
     layout: list
     content:  # this will include new lines to allow paragraphs
       - layout: left
-        title: Programming Languages:
+        title: Programming Languages
         sub_title: Python, Java, C++,C
       - layout: left
-        title: Backend Frameworks:
+        title: Backend Frameworks
         sub_title: Fast API, Django 
       - layout: left
         title: Computer Networks
@@ -87,16 +87,16 @@ content:
         title: Frontend Languages:
         sub_title: HTML, CSS, JavaScript
       - layout: left
-        title: Frontend Framework:
+        title: Frontend Framework
         sub_title: Bootstrap
       - layout: left
-        title: Frontend Library:
+        title: Frontend Library
         sub_title: React JS
       - layout: left
-        title: Database:
+        title: Database
         sub_title: MYSQL,Sqlite
       - layout: left
-        title: Version Control:
+        title: Version Control
         sub_title: Git, GitHub
    # - title: Experience # Title for the section
    # layout: list # Type of content section (list/text)
