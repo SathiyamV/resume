@@ -84,7 +84,7 @@ content:
       - layout: left
         title: Computer Networks
       - layout: left
-        title: Frontend Languages:
+        title: Frontend Languages
         sub_title: HTML, CSS, JavaScript
       - layout: left
         title: Frontend Framework
