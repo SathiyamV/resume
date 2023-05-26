@@ -9,7 +9,8 @@ version: 2
 name: Sathiya Sundaram V
 title: Fresher
 email: sathiyamsharmila@gmail.com
-website: sathiyam-resume.netlify.app
+link: https://www.canva.com/design/DAFj_LYpD18/tKOzhqJahjMSpkU_IPOBNw/view?utm_content=DAFj_LYpD18&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+link_text: View resume
 
 # Dark Mode (true/false/never)
 darkmode: false
@@ -126,20 +127,30 @@ content:
         quote: >
           Build Hometown site using figma design and Finished the Project.
       - layout: top-middle
-        title: Email-Templates
+        title: Streaming site Email-Template
         link: https://sat-streamingsite.netlify.app
         link_text: Steaming site Template
-        link: https://sat-emailtemplate.netlify.app
-        link_text: Social Email Template
         additional_links:
           - title:  Streaming site
             icon: fab fa-github
             url: github.com/SathiyamV/Streaming-template
-          - title:  Social Email template
+          
+        quote: >
+          Build a email template only using html and internal css.    
+      
+      - layout: top-middle
+        title: Social Email Template
+        link: https://sat-emailtemplate.netlify.app
+        link_text: Social Email Template
+        additional_links:
+         - title:  Social Email template
             icon: fab fa-github
             url: https://github.com/SathiyamV/email-template
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          Build Hometown site using figma design and Finished the Project.    
+          Build a email template only using html and internal css.
       
       - layout: top-middle
         title: Passanger counter app
