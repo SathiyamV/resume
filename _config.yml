@@ -70,13 +70,111 @@ content:
         quote: >
           I Started to learn Frontend From this Project.
           
+      - layout: top-middle
+        title: Google.com Clone
+        link: https://sat-googleclone.netlify.app
+        link_text: google.com
+        additional_links:
+          - title:  Gooleclone
+            icon: fab fa-github
+            url: github.com/SathiyamV/googleclone
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Build FrontEnd of Google.com page .    
+      
+      - layout: top-middle
+        title: DigitalCard Site
+        link: https://sat-digitalcard.netlify.app
+        link_text: DigitalCard Site
+        additional_links:
+          - title:  Digitalcard
+            icon: fab fa-github
+            url: github.com/SathiyamV/Digital-Card-Scrimba
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Simple Digital card with Animation.
+      
+      - layout: top-middle
+        title: Birthday Gift Site
+        link: https://jaider-20.netlify.app
+        link_text: Birthday Gift site
+        additional_links:
+          - title:  Birthdaygift
+            icon: fab fa-github
+            url: github.com/SathiyamV/jaiderbdaygift
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Created Birthday gift site For my Friend.
+      
+      - layout: top-middle
+        title: HomeTownPage
+        link: https://sat-solopro1.netlify.app
+        link_text: HometownPage
+        additional_links:
+          - title:  HometownPage
+            icon: fab fa-github
+            url: github.com/SathiyamV/Module-2-Solo-project-Scrimba
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Build Hometown site using figma design and Finished the Project.
+      - layout: top-middle
+        title: Email-Templates
+        link: https://sat-streamingsite.netlify.app
+        link_text: Steaming site Template
+        link: https://sat-emailtemplate.netlify.app
+        link_text: Social Email Template
+        additional_links:
+          - title:  Streaming site
+            icon: fab fa-github
+            url: github.com/SathiyamV/Streaming-template
+          - title:  Social Email template
+            icon: fab fa-github
+            url: https://github.com/SathiyamV/email-template
+        quote: >
+          Build Hometown site using figma design and Finished the Project.    
+      
+      - layout: top-middle
+        title: Passanger counter app
+        link: https://passcount-sat.netlify.app
+        link_text: PassangerCounterApp
+        additional_links:
+          - title:  passangercounterapp
+            icon: fab fa-github
+            url: github.com/SathiyamV/passanger-counter-js
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Build an Interactive Passanger counter app using HTML, CSS & JS .
+      
+      - layout: top-middle
+        title: Basketball Scoreboard
+        link: https://sat-basketballscoreboard.netlify.app
+        link_text: BasketballScoreBoard
+        additional_links:
+          - title:  BasketballScoreBoard
+            icon: fab fa-github
+            url: github.com/SathiyamV/basketball-scoreboard
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Build an Interactive Basketball Scoreboard using HTML, CSS & JS .
           
       - layout: top-middle
         title: Todo Application
-        link: github.com/SathiyamV
+        # link: github.com/SathiyamV
         # link_text: Project Website
         additional_links:
-          - title:  SathiyamV/fastapi
+          - title:  todoapp
             icon: fab fa-github
             url: github.com/SathiyamV/fastapi
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
@@ -84,20 +182,19 @@ content:
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
           I learned about backend and API about in this Project .
-        description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>Python</mark> and  learned about how Frontend and Backend works. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          
           
   - title: Skills
     layout: text
     content: |
       My Technical Skills are:
-      - Frontend Languages (<mark>HTML</mark>, <mark>CSS</mark>, <mark>JavaScript</mark>)
-      - Programming Languages (Python, Java, C++,C)
-      - Backend Frameworks (Fast API)
+      - Frontend Languages : HTML, CSS, JavaScript
+      - Programming Languages : Python, Java, C++,C
+      - Backend Framework : Fast API
       - Computer Networks
-      - Frontend Library (React JS)
-      - Database (MYSQL,Sqlite)
-      - Version Control (Git, GitHub)
+      - Frontend Library : React JS
+      - Database : MYSQL, Sqlite
+      - Version Control : Git, GitHub
  # - title: Skills
    # layout: text
    # content:    
