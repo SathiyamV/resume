@@ -9,8 +9,7 @@ version: 2
 name: Sathiya Sundaram V
 title: Fresher
 email: sathiyamsharmila@gmail.com
-link: https://www.canva.com/design/DAFj_LYpD18/tKOzhqJahjMSpkU_IPOBNw/view?utm_content=DAFj_LYpD18&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
-link_text: View resume
+website: sathiyam-resume.netlify.app
 
 # Dark Mode (true/false/never)
 darkmode: false
@@ -31,10 +30,10 @@ linkedin_username: sathiyasundaramv
 # orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
-# additional_links:
-# - title: itsgoingto.be
-#  icon: fas fa-globe
-#  url: https://www.itsgoingto.be
+additional_links:
+ - title: resume
+   icon: fas fa-globe
+   url: https://www.canva.com/design/DAFj_LYpD18/tKOzhqJahjMSpkU_IPOBNw/view?utm_content=DAFj_LYpD18&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
