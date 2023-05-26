@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Sathiya Sundaram V
-title: Intern Trainee
+title: Fresher
 email: sathiyamsharmila@gmail.com
 website: sathiyam-resume.netlify.app
 
@@ -48,9 +48,9 @@ linkedin_username: sathiyasundaramv
 # about_title: About Me
 about_profile_image: images/pic.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Sathiyam and I'm a Intern Trainee. Second Year B.sc student pursuing Computer science, Good with the fundamentals of Frontend and Backend Development. Technically sound with concepts of Python. I actively pursue and educate myself with the latest available technology.
+  Hi, my name's Sathiyam and I'm a Fresher. Second Year B.sc student pursuing Computer science, Good with the fundamentals of Frontend and Backend Development. Technically sound with concepts of JavaScript & Python. I actively pursue and educate myself with the latest available technology.
 
-  I am most skilled in: <mark>Python</mark> and <mark>Web Development</mark>
+  I am most skilled in: <mark>JavaScript</mark> and <mark>Web Development</mark>
 
 content:
   - title: Projects # Title for the section
@@ -76,11 +76,10 @@ content:
     layout: text
     content: |
       My Technical Skills are:
+      - Frontend Languages <mark>(HTML, CSS, JavaScript)</mark>
       - Programming Languages (Python, Java, C++,C)
-      - Backend Frameworks (Fast API, Django)
+      - Backend Frameworks (Fast API)
       - Computer Networks
-      - Frontend Languages (HTML, CSS, JavaScript)
-      - Frontend Framework (Bootstrap)
       - Frontend Library (React JS)
       - Database (MYSQL,Sqlite)
       - Version Control (Git, GitHub)
@@ -127,7 +126,7 @@ content:
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: top-middle
+      - layout: left
         title: Sri Krishna Adithiya College of Arts and Science
         caption: 2021 - 2024
         sub_title: BSc Computer Science
