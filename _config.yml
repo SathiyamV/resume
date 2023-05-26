@@ -57,6 +57,21 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
+        title: Simple Portfolio Website
+        link: https://portsat.netlify.app
+        link_text: Portfolio Website
+        additional_links:
+          - title:  portfolio
+            icon: fab fa-github
+            url: github.com/SathiyamV/portfolio
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          I Started to learn Frontend From this Project.
+          
+          
+      - layout: top-middle
         title: Todo Application
         link: github.com/SathiyamV
         # link_text: Project Website
@@ -76,7 +91,7 @@ content:
     layout: text
     content: |
       My Technical Skills are:
-      - Frontend Languages <mark>(HTML, CSS, JavaScript)</mark>
+      - Frontend Languages (<mark>HTML</mark>, <mark>CSS</mark>, <mark>JavaScript</mark>)
       - Programming Languages (Python, Java, C++,C)
       - Backend Frameworks (Fast API)
       - Computer Networks
@@ -126,7 +141,7 @@ content:
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: left
+      - layout: top-middle
         title: Sri Krishna Adithiya College of Arts and Science
         caption: 2021 - 2024
         sub_title: BSc Computer Science
