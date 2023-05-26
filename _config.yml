@@ -144,8 +144,8 @@ content:
         link_text: Social Email Template
         additional_links:
          - title:  Social Email template
-            icon: fab fa-github
-            url: https://github.com/SathiyamV/email-template
+           icon: fab fa-github
+           url: https://github.com/SathiyamV/email-template
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
