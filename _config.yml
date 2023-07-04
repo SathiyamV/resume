@@ -16,6 +16,12 @@ darkmode: false
 
 # Social links
 # twitter_username: facespics
+button:
+      enable: true
+      name: "Resume"
+      url: https://www.canva.com/design/DAFj_LYpD18/tKOzhqJahjMSpkU_IPOBNw/view?utm_content=DAFj_LYpD18&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+      download: true
+      newPage: false
 github_username:  SathiyamV
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
@@ -30,12 +36,6 @@ linkedin_username: sathiyasundaramv
 # orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
-button:
-      enable: true
-      name: "Resume"
-      url: https://www.canva.com/design/DAFj_LYpD18/tKOzhqJahjMSpkU_IPOBNw/view?utm_content=DAFj_LYpD18&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
-      download: true
-      newPage: false
 additional_links:
  - title: resume
    icon: fas fa-globe
