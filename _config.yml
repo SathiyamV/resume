@@ -48,7 +48,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/pic.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Sathiyam and I'm a Fresher. Second Year B.sc student pursuing Computer science, Good with the fundamentals of Frontend and Backend Development. Technically sound with concepts of JavaScript & Python. I actively pursue and educate myself with the latest available technology.
+  Hi, my name Sathiya Sundaram V and I'm a Fresher. Final Year B.sc student pursuing Computer science, Good with the fundamentals of Frontend and Backend Development. Technically sound with concepts of JavaScript & Python. I actively pursue and educate myself with the latest available technology.
 
   I am most skilled in: <mark>JavaScript</mark> and <mark>Web Development</mark>
 
@@ -64,9 +64,6 @@ content:
           - title:  portfolio
             icon: fab fa-github
             url: github.com/SathiyamV/portfolio
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
           I Started to learn Frontend From this Project.
           
@@ -78,9 +75,6 @@ content:
           - title:  Gooleclone
             icon: fab fa-github
             url: github.com/SathiyamV/googleclone
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
           Build FrontEnd of Google.com page .    
       
@@ -92,9 +86,6 @@ content:
           - title:  Digitalcard
             icon: fab fa-github
             url: github.com/SathiyamV/Digital-Card-Scrimba
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
           Simple Digital card with Animation.
       
@@ -106,9 +97,6 @@ content:
           - title:  Birthdaygift
             icon: fab fa-github
             url: github.com/SathiyamV/jaiderbdaygift
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
           Created Birthday gift site For my Friend.
       
@@ -120,9 +108,6 @@ content:
           - title:  HometownPage
             icon: fab fa-github
             url: github.com/SathiyamV/Module-2-Solo-project-Scrimba
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
           Build Hometown site using figma design and Finished the Project.
       - layout: top-middle
@@ -145,25 +130,19 @@ content:
          - title:  Social Email template
            icon: fab fa-github
            url: https://github.com/SathiyamV/email-template
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
           Build a email template only using html and internal css.
       
       - layout: top-middle
-        title: Passanger counter app
+        title: Passenger counter app
         link: https://passcount-sat.netlify.app
-        link_text: PassangerCounterApp
+        link_text: PassengerCounterApp
         additional_links:
-          - title:  passangercounterapp
+          - title:  passengerCounterapp
             icon: fab fa-github
-            url: github.com/SathiyamV/passanger-counter-js
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+            url: github.com/SathiyamV/passenger-counter-js
         quote: >
-          Build an Interactive Passanger counter app using HTML, CSS & JS .
+          Build an Interactive Passenger counter app using HTML, CSS & JS .
       
       - layout: top-middle
         title: Basketball Scoreboard
@@ -173,12 +152,65 @@ content:
           - title:  BasketballScoreBoard
             icon: fab fa-github
             url: github.com/SathiyamV/basketball-scoreboard
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
           Build an Interactive Basketball Scoreboard using HTML, CSS & JS .
-          
+
+      - layout: top-middle
+        title: Blackjack Game
+        link: https://sat-blackjack.netlify.app
+        link_text: BlackjackGame
+        additional_links:
+          - title:  BlackjackGame
+            icon: fab fa-github
+            url: github.com/SathiyamV/Blackjack_game
+        quote: >
+          Build an Interactive BlackJack Game using HTML, CSS & JS .
+
+      - layout: top-middle
+        title: Password Generator
+        link: https://sat-passwordgenerator.netlify.app
+        link_text: PasswordGenerator
+        additional_links:
+          - title:  PasswordGenerator
+            icon: fab fa-github
+            url: github.com/SathiyamV/password_generator
+        quote: >
+          Build an Interactive BlackJack Game using HTML, CSS & JS .    
+
+      - layout: top-middle
+        title: Travel Site Landing Page
+        link: https://sat-traveling-landing-page.netlify.app
+        link_text: TravelSiteLandingPage
+        additional_links:
+          - title:  TravelSiteLandingPage
+            icon: fab fa-github
+            url: github.com/SathiyamV/Travel-landing-page    
+        quote: >
+          Its My Full Fledged project Build From Scratch.
+      
+      - layout: top-middle
+        title: Lead Tracker
+        link: https://sat-leadtracker.netlify.app
+        link_text: LeadTracker
+        additional_links:
+          - title:  LeadTracker
+            icon: fab fa-github
+            url: github.com/SathiyamV/lead-tracker    
+        quote: >
+          Build an Chrome Extension using JavaScript and played with LocalStorage.
+      
+      - layout: top-middle
+        title: Web Drum
+        link: https://sat-jsdrum.netlify.app
+        link_text: WebDrum
+        additional_links:
+          - title:  WebDrum
+            icon: fab fa-github
+            url: github.com/SathiyamV/javascript-drum    
+        quote: >
+          Build an Interactive Web Drum Using JS EventListener.
+
+
       - layout: top-middle
         title: Todo Application
         # link: github.com/SathiyamV
@@ -200,11 +232,10 @@ content:
       My Technical Skills are:
       - Frontend Languages : HTML, CSS, JavaScript
       - Programming Languages : Python, Java, C++,C
-      - Backend Framework : Fast API
-      - Computer Networks
       - Frontend Library : React JS
       - Database : MYSQL, Sqlite
       - Version Control : Git, GitHub
+      - Computer Networks
  # - title: Skills
    # layout: text
    # content:    
@@ -283,7 +314,7 @@ content:
 
 # Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
+references_title: ©Copyright Free
 
 # Build settings
 remote_theme: sproogen/resume-theme
