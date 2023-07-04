@@ -232,6 +232,7 @@ content:
       My Technical Skills are:
       - Frontend Languages : HTML, CSS, JavaScript
       - Programming Languages : Python, Java, C++,C
+      - Scripting Language : Linux Shell
       - Frontend Library : React JS
       - Database : MYSQL, Sqlite
       - Version Control : Git, GitHub
@@ -280,16 +281,16 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Sri Krishna Adithiya College of Arts and Science
+        title: Sri Krishna Adithya College of Arts and Science
         caption: 2021 - 2024
         sub_title: BSc Computer Science
       - layout: top-middle
-        title: Sri Vidya Matric Higher Secondary School,Virudhunagar
+        title: Sri Vidya Matric Higher Secondary School, Virudhunagar
         caption: 2020 - 2021
         sub_title: HSC
         sub_title: 80%
       - layout: top-middle
-        title: KVS Higher Secondary School,Virudhunagar
+        title: KVS Higher Secondary School, Virudhunagar
         caption: 2018 - 2019
         sub_title: SSLC
         sub_title: 70%
