@@ -63,15 +63,15 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Simple Portfolio Website
-        link: https://portsat.netlify.app
-        link_text: Portfolio Website
+        title: Boar Rental Site
+        link: https://sat-boatrental.netlify.app/
+        link_text: Boar Rental Site
         additional_links:
-          - title:  portfolio
+          - title:  Boar-Rental-Site
             icon: fab fa-github
-            url: github.com/SathiyamV/portfolio
+            url: github.com/SathiyamV/Boat-rental
         quote: >
-          I Started to learn Frontend From this Project.
+          Boat Rental Site With JS. 
           
       - layout: top-middle
         title: Google.com Clone
@@ -85,26 +85,26 @@ content:
           Build FrontEnd of Google.com page .    
       
       - layout: top-middle
-        title: DigitalCard Site
-        link: https://sat-digitalcard.netlify.app
-        link_text: DigitalCard Site
+        title: MovieApp
+        link: https://sat-movieapp.netlify.app/
+        link_text: MovieApp
         additional_links:
-          - title:  Digitalcard
+          - title:  MovieApp
             icon: fab fa-github
-            url: github.com/SathiyamV/Digital-Card-Scrimba
+            url: github.com/SathiyamV/day-17-movie-app
         quote: >
-          Simple Digital card with Animation.
+          Created Movie App Using IMDB API.
       
       - layout: top-middle
-        title: Birthday Gift Site
-        link: https://jaider-20.netlify.app
-        link_text: Birthday Gift site
+        title: JavaScript Calculator
+        link: https://sat-jscalculator.netlify.app/
+        link_text: JavaScript Calculator
         additional_links:
-          - title:  Birthdaygift
+          - title:  Calculator
             icon: fab fa-github
-            url: github.com/SathiyamV/jaiderbdaygift
+            url: github.com/SathiyamV/jscalculator
         quote: >
-          Created Birthday gift site For my Friend.
+          Calculator Using JavaScript.
       
       - layout: top-middle
         title: HomeTownPage
