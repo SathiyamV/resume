@@ -154,7 +154,19 @@ ul, ol, dl, dd { margin: 0; padding: 0; list-style: none; }
 .node-head .ok { color: var(--accent); }
 .node-photo { aspect-ratio: 4 / 3; background: var(--surface-2); position: relative; }
 @media (min-width: 900px) { .node-photo { aspect-ratio: 1; } }
-.node-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; display: block; }
+.node-photo img { position: relative; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block; }
+/* Themed backdrop behind the cut-out portrait: accent glow + the page grid */
+.node-photo.has-photo {
+  background:
+    radial-gradient(60% 55% at 50% 42%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 70%),
+    linear-gradient(var(--grid) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(180deg, var(--surface-2), var(--bg));
+}
+.node-photo.has-photo::after {
+  content: ""; position: absolute; inset: auto 0 0; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: .6;
+}
 .monogram {
   position: absolute; inset: 0; display: grid; place-items: center;
   font: 800 clamp(5rem, 22vw, 8rem)/1 var(--display); letter-spacing: -0.06em;

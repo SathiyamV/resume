@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{- $p := hugo.Data.profile -}}
-{{- $hasPhoto := fileExists (printf "static/%s" site.Params.photo) -}}
+{{- $photo := cond (fileExists (printf "static/%s" site.Params.photo_cutout)) site.Params.photo_cutout site.Params.photo -}}
+{{- $hasPhoto := fileExists (printf "static/%s" $photo) -}}
 
 <header class="bar">
   <div class="wrap bar-in">
@@ -41,9 +42,9 @@
         <span>{{ lower $p.short }}@{{ index (split (lower $p.location) ",") 0 }}</span>
         <span class="ok">● healthy</span>
       </div>
-      <div class="node-photo">
+      <div class="node-photo{{ if $hasPhoto }} has-photo{{ end }}">
         {{- if $hasPhoto }}
-        <img src="{{ site.Params.photo | relURL }}" alt="Portrait of {{ $p.name }}" width="800" height="800">
+        <img src="{{ $photo | relURL }}" alt="Portrait of {{ $p.name }}" width="640" height="640">
         {{- else }}
         <div class="monogram" aria-hidden="true">SS</div>
         {{- end }}
