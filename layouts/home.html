@@ -1,0 +1,210 @@
+{{ define "main" }}
+{{- $p := hugo.Data.profile -}}
+{{- $hasPhoto := fileExists (printf "static/%s" site.Params.photo) -}}
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="mark" href="#top" aria-label="Back to top">ss<span>v</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#certs">Certs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme" type="button" aria-label="Switch colour theme">{{ partial "icon.html" "theme" }}</button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero -->
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="kicker mono">
+        <span class="dot" aria-hidden="true"></span> {{ if $p.open_to_work }}open to new roles{{ else }}currently at {{ $p.employer }}{{ end }}
+        <span class="sep">/</span> <span data-clock="{{ $p.timezone }}">IST</span>
+      </p>
+      <h1 class="name">{{ replace $p.name " V" " V" }}</h1>
+      <p class="role">{{ $p.role }} <span class="role-sub">— {{ $p.tagline }}</span></p>
+      <p class="summary">{{ $p.summary }}</p>
+      <div class="cta">
+        <a class="btn btn-solid" href="{{ site.Params.cv | relURL }}" download>{{ partial "icon.html" "download" }} Download CV</a>
+        <a class="btn" href="mailto:{{ $p.email }}">{{ partial "icon.html" "mail" }} Email me</a>
+        <span class="cta-group">
+          <a class="btn btn-icon" href="https://github.com/{{ $p.github }}" aria-label="GitHub" rel="me">{{ partial "icon.html" "github" }}</a>
+          <a class="btn btn-icon" href="https://www.linkedin.com/in/{{ $p.linkedin }}" aria-label="LinkedIn" rel="me">{{ partial "icon.html" "linkedin" }}</a>
+        </span>
+      </div>
+    </div>
+
+    <figure class="node">
+      <div class="node-head mono">
+        <span>{{ lower $p.short }}@{{ index (split (lower $p.location) ",") 0 }}</span>
+        <span class="ok">● healthy</span>
+      </div>
+      <div class="node-photo">
+        {{- if $hasPhoto }}
+        <img src="{{ site.Params.photo | relURL }}" alt="Portrait of {{ $p.name }}" width="800" height="800">
+        {{- else }}
+        <div class="monogram" aria-hidden="true">SS</div>
+        {{- end }}
+      </div>
+      <dl class="node-meta mono">
+        <div><dt>uptime</dt><dd data-uptime="{{ $p.career_start }}">2y+</dd></div>
+        <div><dt>region</dt><dd>{{ $p.location }}</dd></div>
+        <div><dt>clouds</dt><dd>aws · gcp · azure</dd></div>
+      </dl>
+    </figure>
+  </section>
+
+  <!-- Metrics -->
+  <section class="wrap" aria-label="Highlights">
+    <ul class="metrics">
+      {{- range $p.metrics }}
+      <li><strong>{{ .value }}</strong><span>{{ .label }}</span></li>
+      {{- end }}
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section id="work" class="wrap section">
+    <div class="sec-head"><span class="idx mono">01</span><h2>Experience</h2><span class="rule"></span></div>
+    {{- range hugo.Data.experience }}
+    <article class="job">
+      <div class="job-side">
+        <h3>{{ .company }}</h3>
+        <p class="job-title">{{ .title }}</p>
+        <p class="mono muted">{{ .period }}{{ if .current }} <span class="live-tag">now</span>{{ end }}</p>
+      </div>
+      <div class="job-log">
+        {{- range .groups }}
+        <div class="log-group reveal">
+          <span class="tag mono">{{ .tag }}</span>
+          <ul>{{ range .points }}<li>{{ . }}</li>{{ end }}</ul>
+        </div>
+        {{- end }}
+      </div>
+    </article>
+    {{- end }}
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="wrap section">
+    <div class="sec-head"><span class="idx mono">02</span><h2>Projects</h2><span class="rule"></span></div>
+    <div class="projects">
+      {{- range $i, $_ := hugo.Data.projects }}
+      <article class="project reveal{{ if eq $i 0 }} featured{{ end }}">
+        <header class="project-head">
+          <span class="mono muted">{{ .kind }}</span>
+          <span class="status status-{{ .status_kind }} mono">{{ .status }}</span>
+        </header>
+        <h3>{{ .name }}</h3>
+        <p class="project-sum">{{ .summary }}</p>
+
+        <ol class="flow mono" aria-label="Request flow">
+          {{- range .flow }}<li><span>{{ . }}</span></li>{{ end }}
+        </ol>
+        {{- with .pipeline }}
+        <ol class="flow flow-ci mono" aria-label="Delivery pipeline">
+          {{- range . }}<li><span>{{ . }}</span></li>{{ end }}
+        </ol>
+        {{- end }}
+
+        <ul class="points">{{ range .highlights }}<li>{{ . }}</li>{{ end }}</ul>
+        <ul class="stack mono">{{ range .stack }}<li>{{ . }}</li>{{ end }}</ul>
+
+        {{- if or .links .note }}
+        <footer class="project-foot">
+          {{- range .links }}
+          <a class="link" href="{{ .url }}" target="_blank" rel="noopener">{{ .label }} {{ partial "icon.html" "arrow" }}</a>
+          {{- end }}
+          {{- with .note }}<p class="note muted">{{ . }}</p>{{ end }}
+        </footer>
+        {{- end }}
+      </article>
+      {{- end }}
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certs" class="wrap section">
+    <div class="sec-head"><span class="idx mono">03</span><h2>Certifications</h2><span class="rule"></span></div>
+    <ul class="certs">
+      {{- range hugo.Data.certs }}
+      <li class="cert reveal" data-issuer="{{ .issuer | urlize }}">
+        <span class="mono issuer">{{ .issuer }}</span>
+        <strong>{{ .name }}</strong>
+        <span class="mono muted">{{ .date }}</span>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="wrap section">
+    <div class="sec-head"><span class="idx mono">04</span><h2>Toolbox</h2><span class="rule"></span></div>
+    <dl class="skills">
+      {{- range $p.skills }}
+      <div class="skill-row reveal">
+        <dt class="mono">{{ .group }}</dt>
+        <dd><ul>{{ range .items }}<li>{{ . }}</li>{{ end }}</ul></dd>
+      </div>
+      {{- end }}
+    </dl>
+  </section>
+
+  <!-- Education + archive -->
+  <section class="wrap section split">
+    <div>
+      <div class="sec-head"><span class="idx mono">05</span><h2>Education</h2><span class="rule"></span></div>
+      {{- with $p.education }}
+      <div class="edu reveal">
+        <strong>{{ .degree }}</strong>
+        <p>{{ .school }}</p>
+        <p class="mono muted">{{ .period }} · {{ .score }}</p>
+      </div>
+      {{- end }}
+    </div>
+    <div>
+      <div class="sec-head"><span class="idx mono">06</span><h2>Where it started</h2><span class="rule"></span></div>
+      <details class="archive">
+        <summary><span>{{ len hugo.Data.archive }} small projects from 2023, built while learning the web</span><span class="mono plus" aria-hidden="true">+</span></summary>
+        <ul>
+          {{- range hugo.Data.archive }}
+          <li>
+            <span class="a-name">{{ .name }}</span>
+            <span class="mono muted a-what">{{ .what }}</span>
+            <span class="a-links mono">
+              {{- with .live }}<a href="{{ . }}" target="_blank" rel="noopener">live</a>{{ end }}
+              {{- with .code }}<a href="{{ . }}" target="_blank" rel="noopener">code</a>{{ end }}
+            </span>
+          </li>
+          {{- end }}
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="wrap contact">
+    <p class="mono"><span class="idx-c">07</span> <span class="muted">/ contact</span></p>
+    <h2>Got a system that pages you at 3 a.m.?<br><span>Let's talk.</span></h2>
+    <div class="contact-row">
+      <a class="email" href="mailto:{{ $p.email }}">{{ $p.email }}</a>
+      <button class="btn btn-icon copy" type="button" data-copy="{{ $p.email }}" aria-label="Copy email address">{{ partial "icon.html" "copy" }}</button>
+    </div>
+    <div class="cta">
+      <a class="btn" href="https://www.linkedin.com/in/{{ $p.linkedin }}">{{ partial "icon.html" "linkedin" }} LinkedIn</a>
+      <a class="btn" href="https://github.com/{{ $p.github }}">{{ partial "icon.html" "github" }} GitHub</a>
+      <a class="btn" href="{{ site.Params.cv | relURL }}" download>{{ partial "icon.html" "download" }} CV (PDF)</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap mono muted">
+  <div class="foot-in">
+    <span>© {{ now.Year }} {{ $p.name }}</span>
+    <span>Built with Hugo · hosted on Netlify</span>
+  </div>
+</footer>
+<div class="toast mono" role="status" aria-live="polite"></div>
+{{ end }}

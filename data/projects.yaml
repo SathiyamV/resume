@@ -1,0 +1,52 @@
+- name: SAP ByDesign AI Assistant
+  kind: RAG chatbot
+  status: Code going public soon
+  status_kind: soon
+  summary: >
+    A production RAG assistant for SAP Business ByDesign. Two specialist agents — General ByD and
+    Logistics / SCM — answer from 54,000+ chunks of SAP documentation, stream replies in real time,
+    and can read screenshots and freshly uploaded PDF / DOCX files.
+  flow: [SAP docs · 54k chunks, Retriever, Agent router, GPT-4o-mini, Streamed answer]
+  highlights:
+    - Two-agent architecture with routing by question domain
+    - Multi-turn memory and real-time streaming responses
+    - Live PDF / DOCX ingestion and GPT-4o-mini vision for screenshots
+    - Enterprise security controls
+  stack: [Node.js, Express, LangChain, OpenAI GPT-4o-mini, RAG]
+  links: []
+
+- name: Contact Manager
+  kind: Full-stack app
+  status: Live
+  status_kind: live
+  summary: >
+    A MERN contact manager with JWT authentication, REST APIs and MongoDB text search,
+    containerised with Docker and shipped through a GitHub Actions pipeline to Render.
+  flow: [React, Express REST · JWT, MongoDB Atlas]
+  pipeline: [git push, GitHub Actions, Docker image, Render]
+  highlights:
+    - JWT auth with protected routes and per-user data
+    - MongoDB text-search indexing
+    - Dockerised frontend and backend, CI/CD with automated tests
+  stack: [MongoDB, Express, React, Node.js, Docker, GitHub Actions]
+  note: Free-tier hosting — the first request can take ~50 s to wake the server.
+  links:
+    - label: Live demo
+      url: https://contact-frontend-71hj.onrender.com
+    - label: Source
+      url: https://github.com/SathiyamV/Contact-Manager-App-Fullstack
+
+- name: Multi-agent Contact Centre
+  kind: Client work · Accenture
+  status: Private
+  status_kind: private
+  summary: >
+    Voice IVR and chat agents that triage customer issues across 13 categories — billing,
+    troubleshooting, knowledge and escalation — built on Google's agent stack.
+  flow: [Caller / chat, Dialogflow CX, ADK agents, Vertex AI · Gemini, BigQuery]
+  highlights:
+    - Gemini 2.5 → 3.1 Flash Lite migration for faster live replies
+    - Cloud Spanner knowledge base, BigQuery conversation analytics
+    - GitHub → Dialogflow CX deployment pipeline
+  stack: [Dialogflow CX, Google ADK, Vertex AI, Gemini, BigQuery, Spanner]
+  links: []

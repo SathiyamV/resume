@@ -1,0 +1,10 @@
+baseURL = "https://sathiyam-resume.netlify.app/"
+locale = "en"
+title = "Sathiya Sundaram V — Cloud & AI Engineer"
+disableKinds = ["taxonomy", "term", "RSS", "section", "page"]
+
+[params]
+  description = "Sathiya Sundaram V — Cloud & AI Engineer at Accenture. DevOps, SRE and RAG systems on AWS, GCP and Azure."
+  # Drop your photo at static/images/profile.jpg (square, ~800×800). Until then a monogram is shown.
+  photo = "images/profile.jpg"
+  cv = "Sathiya-Sundaram-V-CV.pdf"

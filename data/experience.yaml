@@ -1,0 +1,26 @@
+- company: Accenture
+  title: Associate Software Engineer — DevOps & AI Engineer
+  period: Jul 2024 – Present
+  current: true
+  groups:
+    - tag: reliability
+      points:
+        - Resolved 500+ production incidents across cloud ERP systems serving 500+ concurrent users — 100% SLA, zero critical breaches.
+        - Traced API failures, integration bottlenecks and data inconsistencies across microservices through logs and request flows.
+        - Wrote 50+ knowledge-base articles on recurring incidents, cutting repeat tickets and speeding up onboarding.
+    - tag: infrastructure
+      points:
+        - Built AWS infrastructure with CloudFormation — VPC, ALB, EC2 Auto Scaling and Multi-AZ RDS PostgreSQL, wired to CloudWatch and SNS alerts.
+        - Cut SQL and API execution from minutes to seconds across 20+ endpoints by trimming data retrieval, reusing query templates and enabling API Gateway caching.
+    - tag: observability
+      points:
+        - Built Grafana, Prometheus and GCP Observability dashboards plus Apigee monitoring for 429 / 500 / 401 errors, with Slack alerting.
+        - Caught and fixed a production API spike on call — root cause was an expired OAuth token.
+    - tag: integrations
+      points:
+        - Developed and debugged SAP Business ByDesign integrations across 20+ APIs and flows — REST/SOAP, data consistency and backend issues.
+    - tag: ai
+      points:
+        - Built a multi-agent contact-centre solution on Dialogflow CX, Google ADK and Vertex AI — IVR and chatbot routing across 13 categories.
+        - Migrated the agent from Gemini 2.5 to 3.1 Flash Lite for lower latency in live conversations.
+        - Moved conversation logs to BigQuery, FAQ data to Cloud Spanner, and built a GitHub → Dialogflow CX CI/CD pipeline.

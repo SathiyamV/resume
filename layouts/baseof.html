@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.Title }}</title>
+  <meta name="description" content="{{ site.Params.description }}">
+  <meta property="og:title" content="{{ site.Title }}">
+  <meta property="og:description" content="{{ site.Params.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.BaseURL }}">
+  {{- if fileExists (printf "static/%s" site.Params.photo) }}
+  <meta property="og:image" content="{{ site.Params.photo | absURL }}">
+  {{- end }}
+  <meta name="theme-color" content="#0e1214">
+  <link rel="icon" href="{{ "favicon.ico" | relURL }}">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  {{- $css := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+</head>
+<body>
+  {{ block "main" . }}{{ end }}
+  {{- $js := resources.Get "js/main.js" | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+</body>
+</html>

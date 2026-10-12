@@ -1,0 +1,47 @@
+name: Sathiya Sundaram V
+short: Sathiya
+role: Cloud & AI Engineer
+tagline: DevOps · SRE · RAG systems
+location: Virudhunagar, India
+timezone: Asia/Kolkata
+employer: Accenture
+career_start: 2024-07-01
+email: sathiyasundaram03@gmail.com
+github: SathiyamV
+linkedin: sathiyasundaramv
+open_to_work: false   # true shows a green "open to new roles" badge
+summary: >
+  I keep production systems healthy and build the automation and AI tooling that
+  stops the same problem from coming back. At Accenture I run SRE for enterprise
+  SAP Business ByDesign environments, ship cloud infrastructure as code, and build
+  RAG assistants that answer from 54,000+ chunks of SAP documentation in seconds.
+
+metrics:
+  - value: "500+"
+    label: production incidents resolved
+  - value: "100%"
+    label: SLA compliance, zero critical breaches
+  - value: "20+"
+    label: API endpoints tuned from minutes to seconds
+  - value: "50+"
+    label: knowledge-base articles written
+
+skills:
+  - group: Cloud
+    items: [AWS Lambda, EC2, ECS, S3, RDS, DynamoDB, API Gateway, SQS, SNS, CloudWatch, CloudFormation, IAM, GCP Compute Engine, GKE, Cloud SQL, Cloud Storage]
+  - group: DevOps & IaC
+    items: [Docker, Kubernetes, GitHub Actions, Terraform, Git, Linux]
+  - group: Observability
+    items: [Grafana, Prometheus, GCP Observability, Apigee, CloudTrail]
+  - group: Languages & Frameworks
+    items: [Node.js, Java, JavaScript, Express.js, Spring Boot, Microservices, REST / SOAP]
+  - group: Data
+    items: [MongoDB, PostgreSQL, MySQL, DynamoDB, BigQuery, Cloud Spanner]
+  - group: AI
+    items: [LangChain, OpenAI GPT-4o-mini, RAG pipelines, Vertex AI, Gemini, Dialogflow CX, Google ADK]
+
+education:
+  degree: B.Sc Computer Science
+  school: Sri Krishna Adithya College of Arts and Science, Coimbatore
+  period: 2021 – 2024
+  score: "CGPA 8.2 / 10"
