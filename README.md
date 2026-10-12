@@ -1,4 +1,4 @@
-# sathiyam-resume.netlify.app
+# sathiya-sundaram-v.netlify.app
 
 Personal portfolio of **Sathiya Sundaram V** — Cloud & AI Engineer.
 Built with [Hugo](https://gohugo.io) and a hand-written theme (no external theme), deployed on Netlify.

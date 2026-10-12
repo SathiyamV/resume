@@ -1,4 +1,4 @@
-baseURL = "https://sathiyam-resume.netlify.app/"
+baseURL = "https://sathiya-sundaram-v.netlify.app/"
 locale = "en"
 title = "Sathiya Sundaram V — Cloud & AI Engineer"
 disableKinds = ["taxonomy", "term", "RSS", "section", "page"]
